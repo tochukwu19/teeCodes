@@ -523,6 +523,10 @@ body::-webkit-scrollbar-thumb {
         flex-flow: column;
     }
 
+    .hero{
+        height: 90vh;
+    }
+
 }
 
 @media only screen and (max-width: 623px) {
