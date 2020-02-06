@@ -21,6 +21,15 @@ const skill4 = document.querySelector(".skill4");
 //     });
 // });
 
+const scrollFn = () => {
+    window.scroll({
+        top: 650,
+        left: 100,
+        behavior: 'smooth'
+    });
+
+}
+
 const skiller1 = (e) => {
     if (window.scrollY >= 265) {
         skill1.classList.add("skill-release1")
