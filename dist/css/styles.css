@@ -178,9 +178,6 @@ body::-webkit-scrollbar-thumb {
     color: var(--em-color);
 }
 
-.scroll-btn{
-    cursor: pointer;
-}
 
 /* Hero-section */
 .hero {
@@ -448,19 +445,61 @@ body::-webkit-scrollbar-thumb {
     background-color: #4692bc;
 }
 
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
-    justify-content: center;
-    grid-gap: 25px;
-    padding-bottom: 15px;
-}
+
 
 .projects {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.project-desc{
+    width: 40%;
+}
+
+.project-img{       
     height: 300px;
-    width: 300px;
+    filter: grayscale(1);
+    transition: filter 0.2s;
+}
+
+.project-img:hover{
+    filter: grayscale(0);
+}
+
+.tag-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.tag-cont i{
+    font-size: 35px;
+    color: #2f6b7b;
+    margin-right: 10px;
+}
+
+.tag-cont i:hover{
+    color: #4692bc;
+}
+
+.tags{
+    display: flex;
+}
+
+.tag{
+   background-color: #2f6b7b;
+   padding: 7px;
+   margin-right: 10px;
+   width: 70px;
+   text-align: center;
+}
+
+.tag:hover{
     background-color: #4692bc;
 }
+
+
 
 @keyframes bounce {
     0% {
@@ -564,4 +603,7 @@ body::-webkit-scrollbar-thumb {
     .works {
         height: auto;
     }
+    /* .projects{
+        flex-flow: column;
+    } */
 }
