@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: lighter;
     margin-bottom: 4px;
     transition: 0.3s ease-in-out;
-    font-family: "Abril Fatface", cursive;
+    font-family: "Raleway", sans-serif;
     font-size: 25px;
     text-transform: uppercase;
 }
@@ -109,6 +109,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     z-index: 5;
     right: 0;
+    cursor: pointer;
 }
 
 .ham {
@@ -182,9 +183,9 @@ body::-webkit-scrollbar-thumb {
 /* Hero-section */
 .hero {
     background-image: linear-gradient(to right bottom,
-            rgba(3, 2, 17, 0.75),
+            rgba(3, 2, 17, 0.98),
             var(--hero-color)),
-        url("../images/pro2.jpg");
+        url("../images/abstract-bright-color-dark-397998.jpg");
     height: calc(100vh - 4.7px);
     background-size: cover;
     background-repeat: no-repeat;
