@@ -183,7 +183,7 @@ body::-webkit-scrollbar-thumb {
 /* Hero-section */
 .hero {
     background-image: linear-gradient(to right bottom,
-            rgba(3, 2, 17, 0.98),
+            rgba(3, 2, 17, 0.90),
             var(--hero-color)),
         url("../images/low-angle-view-of-spiral-staircase-against-black-background-247676.jpg");
     height: calc(100vh - 4.7px);
