@@ -604,6 +604,9 @@ body::-webkit-scrollbar-thumb {
         width: 80%;
         margin-bottom: 40px;
     }
+    .project-img{
+        filter: grayscale(0);
+    }
 }
 
 
