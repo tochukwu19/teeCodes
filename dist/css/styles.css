@@ -229,6 +229,7 @@ path {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: absolute;
 }
 
 .hero-text {
@@ -270,6 +271,8 @@ path {
     background-size: 0 100%;
     transition: background-size 0.5s 0s;
     outline-color: transparent;
+    position: absolute;
+    top: 370px;
     font-family: 'Raleway',
         sans-serif;
     font-size: 17px;
