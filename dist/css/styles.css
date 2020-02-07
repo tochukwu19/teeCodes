@@ -228,6 +228,7 @@ path {
     position: relative;
     background-attachment: fixed;
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -641,9 +642,3 @@ path {
 }
 
 
-@media only screen and (max-width: 1031px) {
-    .works {
-        height: auto;
-    }
-
-}
