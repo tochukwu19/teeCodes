@@ -220,19 +220,16 @@ path {
             rgba(3, 2, 17, 0.50),
             var(--hero-color)),
         url("../images/low-angle-view-of-spiral-staircase-against-black-background-247676.jpg");
-    height: calc(100vh - 4.7px);
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-position: center;
     position: relative;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     display: flex;
-    box-sizing: border-box;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 1.7px;
 }
 
 .hero-text {
@@ -636,9 +633,9 @@ path {
         filter: grayscale(0);
     }
 
-    /* .hero {
+    .hero {
         background-attachment: scroll;
-    } */
+    }
 }
 
 
