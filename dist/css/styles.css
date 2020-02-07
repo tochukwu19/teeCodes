@@ -158,19 +158,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo-container {
-    position: fixed;
+    padding: 50px;
+    position: absolute;
     z-index: 5;
-    font-size: 30px;
-    padding-left: 10px;
-    font-family: 'Roboto Mono', monospace;
-}
-
-.logo-part1 {
-    color: #fff;
-}
-
-.logo-part2 {
-    color: var(--em-color);
 }
 
 .txt-type>.txt {
@@ -178,6 +168,51 @@ body::-webkit-scrollbar-thumb {
     color: var(--em-color);
 }
 
+path {
+    stroke: var(--em-color);
+    fill: var(--em-color);
+    stroke-dasharray: 100;
+    opacity: 10;
+    animation: animate 2.5s cubic-bezier(0, 0.23, 1, .1);
+}
+
+ .cls-1 {
+     fill: #fff;
+     stroke: var(--em-color);
+     stroke-miterlimit: 10;
+ }
+
+ .cls-2 {
+     fill: var(--em-color) !important;
+ }
+
+ #Layer_1 {
+     width: 100px;
+ }
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dasharray: 100;
+    }
+
+    30% {
+        opacity: 10;
+        fill: none;
+        stroke-dasharray: 100;
+    }
+
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: var(--em-color);
+        stroke-dasharray: 0;
+    }
+}
 
 /* Hero-section */
 .hero {
@@ -496,7 +531,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #2f6b7b;
     padding: 7px;
     margin-right: 10px;
-    width: 70px;
     text-align: center;
 }
 
@@ -548,23 +582,15 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media only screen and (max-width: 370px) {
-    .projects-container {
-        grid-template-columns: repeat(auto-fit, 250px) !important;
-    }
-
-    .projects {
-        width: 250px !important;
-    }
-
-    .project-overlay {
-        width: 250px !important;
-    }
-}
 
 @media only screen and (max-width: 600px) {
     .hamburger {
         padding: 20px !important;
+    }
+
+    .logo-container {
+        padding: 10px !important;
+
     }
 
     .project-head {
@@ -605,10 +631,12 @@ body::-webkit-scrollbar-thumb {
         width: 80%;
         margin-bottom: 40px;
     }
-    .project-img{
+
+    .project-img {
         filter: grayscale(0);
     }
-    .hero{
+
+    .hero {
         background-attachment: scroll;
     }
 }
