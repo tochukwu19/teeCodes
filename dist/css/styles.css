@@ -188,7 +188,7 @@ body::-webkit-scrollbar-thumb {
     height: calc(100vh - 4.7px);
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-background-position: center;
+    background-position: center;
     background-position: center;
     position: relative;
     background-attachment: fixed;
@@ -197,6 +197,7 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     flex-direction: column;
     padding: 1.7px;
+    box-sizing: content-box;
 }
 
 .hero-text {
@@ -606,6 +607,9 @@ body::-webkit-scrollbar-thumb {
     }
     .project-img{
         filter: grayscale(0);
+    }
+    .hero{
+        background-attachment: scroll;
     }
 }
 
