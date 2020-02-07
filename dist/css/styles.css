@@ -232,7 +232,6 @@ path {
     justify-content: center;
     flex-direction: column;
     padding: 1.7px;
-    box-sizing: content-box;
 }
 
 .hero-text {
@@ -636,9 +635,9 @@ path {
         filter: grayscale(0);
     }
 
-    /* .hero {
+    .hero {
         background-attachment: scroll;
-    } */
+    }
 }
 
 
