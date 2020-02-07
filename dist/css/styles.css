@@ -448,54 +448,58 @@ body::-webkit-scrollbar-thumb {
 
 
 .projects {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.project-desc{
+.project-desc {
     width: 40%;
 }
 
-.project-img{       
-    height: 300px;
+.project-img-container {
+    width: 40%;
+}
+
+.project-img {
+    width: 100%;
     filter: grayscale(1);
     transition: filter 0.2s;
 }
 
-.project-img:hover{
+.project-img:hover {
     filter: grayscale(0);
 }
 
-.tag-cont{
+.tag-cont {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.tag-cont i{
+.tag-cont i {
     font-size: 35px;
     color: #2f6b7b;
     margin-right: 10px;
 }
 
-.tag-cont i:hover{
+.tag-cont i:hover {
     color: #4692bc;
 }
 
-.tags{
+.tags {
     display: flex;
 }
 
-.tag{
-   background-color: #2f6b7b;
-   padding: 7px;
-   margin-right: 10px;
-   width: 70px;
-   text-align: center;
+.tag {
+    background-color: #2f6b7b;
+    padding: 7px;
+    margin-right: 10px;
+    width: 70px;
+    text-align: center;
 }
 
-.tag:hover{
+.tag:hover {
     background-color: #4692bc;
 }
 
@@ -566,25 +570,12 @@ body::-webkit-scrollbar-thumb {
         flex-flow: column;
     }
 
-    .hero{
+    .hero {
         height: 93vh;
     }
 
 }
 
-@media only screen and (max-width: 623px) {
-    .projects-container {
-        grid-template-columns: repeat(auto-fit, 350px);
-    }
-
-    .projects {
-        width: 350px;
-    }
-
-    .project-overlay {
-        width: 350px;
-    }
-}
 
 @media only screen and (max-width: 800px) {
     .about {
@@ -596,6 +587,23 @@ body::-webkit-scrollbar-thumb {
     .skill-graph {
         width: 83.5%;
     }
+
+    .projects {
+        flex-direction: column-reverse;
+    }
+
+    .projects-flip {
+        flex-direction: column !important;
+    }
+
+    .project-img-container {
+        width: 80%;
+    }
+
+    .project-desc {
+        width: 80%;
+        margin-bottom: 40px;
+    }
 }
 
 
@@ -603,7 +611,5 @@ body::-webkit-scrollbar-thumb {
     .works {
         height: auto;
     }
-    /* .projects{
-        flex-flow: column;
-    } */
+
 }
