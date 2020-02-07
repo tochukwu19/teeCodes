@@ -8,27 +8,17 @@ const skill1 = document.querySelector(".skill1");
 const skill2 = document.querySelector(".skill2");
 const skill3 = document.querySelector(".skill3");
 const skill4 = document.querySelector(".skill4");
+const menuStatic = document.querySelector(".menu-static")
 
-
-// skillcoms.forEach((skillcom) => {
-//     skillcom.addEventListener('mouseover', () => {
-//         skillcom.classList.add("skill-comment-show");
-//         console.log("forEach worked");
-//     });
-//     skillcom.addEventListener('mouseleave', () => {
-//         skillcom.classList.remove("skill-comment-show");
-//         console.log("forEach now worked");
-//     });
-// });
-
-const scrollFn = () => {
-    window.scroll({
-        top: 650,
-        left: 100,
-        behavior: 'smooth'
-    });
-
+const menuStaticFn = (e) => {
+    if (window.scrollY >= 1) {
+        menuStatic.classList.add("menu-static-color")
+    } else {
+        menuStatic.classList.remove("menu-static-color");
+    }
 }
+
+window.addEventListener("scroll", menuStaticFn);
 
 const skiller1 = (e) => {
     if (window.scrollY >= 265) {
