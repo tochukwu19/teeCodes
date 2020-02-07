@@ -224,7 +224,6 @@ path {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
     background-attachment: fixed;
     display: flex;
     align-items: center;
