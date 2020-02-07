@@ -171,9 +171,9 @@ body::-webkit-scrollbar-thumb {
 path {
     stroke: var(--em-color);
     fill: var(--em-color);
-    stroke-dasharray: 55;
+    stroke-dasharray: 100;
     opacity: 10;
-    animation: animate 2.5s cubic-bezier(0, 0.23, 1, .1);
+    animation: animate 1s cubic-bezier(0, 0.23, 1, .1);
 }
 
  .cls-1 {
@@ -194,13 +194,13 @@ path {
     0% {
         opacity: 0;
         fill: none;
-        stroke-dasharray: 55;
+        stroke-dasharray: 100;
     }
 
     30% {
         opacity: 10;
         fill: none;
-        stroke-dasharray: 55;
+        stroke-dasharray: 100;
     }
 
     90% {
