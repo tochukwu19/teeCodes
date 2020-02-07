@@ -242,7 +242,6 @@ path {
 }
 
 .hero-scroll-container {
-
     right: 0;
 }
 
@@ -252,7 +251,6 @@ path {
     position: absolute;
     bottom: 90px;
     right: -15px;
-
 }
 
 .my-name,
@@ -272,7 +270,7 @@ path {
     transition: background-size 0.5s 0s;
     outline-color: transparent;
     position: absolute;
-    top: 370px;
+    top: 420px;
     font-family: 'Raleway',
         sans-serif;
     font-size: 17px;
@@ -588,7 +586,7 @@ path {
     }
 
     .logo-container {
-        padding: 30px 10px 0px 10px !important;
+        padding: 10px 10px 0px 10px !important;
 
     }
 
