@@ -636,9 +636,9 @@ path {
         filter: grayscale(0);
     }
 
-    .hero {
+    /* .hero {
         background-attachment: scroll;
-    }
+    } */
 }
 
 
