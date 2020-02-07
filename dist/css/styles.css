@@ -159,7 +159,7 @@ body::-webkit-scrollbar-thumb {
 
 .logo-container {
     padding: 50px;
-    position: absolute;
+    position: fixed;
     z-index: 5;
 }
 
