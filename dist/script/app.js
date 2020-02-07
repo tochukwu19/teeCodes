@@ -117,7 +117,7 @@ TypeWriter.prototype.type = function () {
 
     this.txtElement.innerHTML = `<span class="txt"> ${this.txt}</span>`
 
-    let typeSpeed = 200;
+    let typeSpeed = 1000;
 
     if (this.isDeleting) {
         typeSpeed /= 2;
@@ -132,7 +132,7 @@ TypeWriter.prototype.type = function () {
 
         this.wordIndex++;
 
-        typeSpeed = 400;
+        typeSpeed = 1100;
     }
 
     setTimeout(() => this.type(), typeSpeed)
