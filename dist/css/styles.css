@@ -220,6 +220,7 @@ path {
         background-color: transparent;
         position: fixed;
         z-index: 6;
+        transition: 0.5s;
 }
 
 .menu-static-color{
