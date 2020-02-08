@@ -518,6 +518,7 @@ path {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+    flex-wrap: wrap;
 }
 
 .tag-cont i {
@@ -532,6 +533,7 @@ path {
 
 .tags {
     display: flex;
+    padding-bottom: 10px;
 }
 
 .tag {
