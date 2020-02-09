@@ -579,11 +579,14 @@ path {
     align-items: center;
     justify-content: center;
     clip-path: polygon(50% 9%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    -webkit-clip-path: polygon(50% 9%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
     transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .elastico {
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0) !important;
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0) !important;
+
 }
 
 .contactme p {
