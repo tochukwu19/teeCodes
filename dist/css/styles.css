@@ -5,7 +5,7 @@ html {
 
 body {
     padding: 0px;
-    background-color: #000;
+    background-color: #4692bc;
     margin: 0px;
     font-weight: 400;
     line-height: 1.5;
@@ -578,9 +578,15 @@ path {
     display: flex;
     align-items: center;
     justify-content: center;
+    clip-path: polygon(50% 12%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+    transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.contactme p{
+.elastico {
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0) !important;
+}
+
+.contactme p {
     color: #71fbff;
 }
 
@@ -614,13 +620,13 @@ path {
     color: var(--page-color);
 }
 
-.form-submit{
+.form-submit {
     background-color: #71fbff !important;
     width: fit-content !important;
     padding: 13px !important;
 }
 
-.form-submit:hover{
+.form-submit:hover {
     background-color: #4692bc !important;
 }
 
@@ -634,7 +640,7 @@ path {
     height: fit-content;
 }
 
-.form-email{
+.form-email {
     width: 50%;
     height: fit-content;
 }
@@ -644,12 +650,12 @@ path {
     background-color: #4692bc;
     font-size: 18px;
     padding: 20px;
-      font-family: 'Courier New',
-      Courier,
-      monospace;
-      font-weight: bold;
-      border: none;
-      margin-bottom: 10px;
+    font-family: 'Courier New',
+        Courier,
+        monospace;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 10px;
 
 
 }
@@ -703,17 +709,18 @@ path {
         flex-wrap: wrap;
     }
 
-    .namail .form-name{
+    .namail .form-name {
         width: 100%;
         margin-right: 0px;
     }
+
     .form-email {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 700px) {
-    .contact-container{
+    .contact-container {
         width: 90%;
     }
 }

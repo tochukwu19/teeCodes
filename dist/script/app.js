@@ -8,7 +8,18 @@ const skill1 = document.querySelector(".skill1");
 const skill2 = document.querySelector(".skill2");
 const skill3 = document.querySelector(".skill3");
 const skill4 = document.querySelector(".skill4");
+const elasticDiv = document.querySelector(".contactme");
 const menuStatic = document.querySelector(".menu-static")
+
+const elasticDivFn = (e) => {
+    if (window.scrollY >= 2225) {
+        elasticDiv.classList.add("elastico")
+    } else {
+        elasticDiv.classList.remove("elastico");
+    }
+}
+
+window.addEventListener("scroll", elasticDivFn);
 
 const menuStaticFn = (e) => {
     if (window.scrollY >= 1) {
