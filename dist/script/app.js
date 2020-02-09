@@ -113,7 +113,7 @@ TypeWriter.prototype.type = function () {
     const fullTxt = this.words[current];
 
     if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length -  1)
+        this.txt = fullTxt.substring(0, this.txt.length - 1)
     } else {
         this.txt = fullTxt.substring(0, this.txt.length + 1)
     }
@@ -130,7 +130,7 @@ TypeWriter.prototype.type = function () {
         typeSpeed = this.wait;
 
         this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === ""){
+    } else if (this.isDeleting && this.txt === "") {
         this.isDeleting = false;
 
         this.wordIndex++;
@@ -145,11 +145,20 @@ document.addEventListener("DOMContentLoaded", init)
 
 function init() {
     const txtElement = document.querySelector(".txt-type");
-    const words = JSON.parse(txtElement.getAttribute("data-words")
-    );
+    const words = JSON.parse(txtElement.getAttribute("data-words"));
     const wait = txtElement.getAttribute("data-wait");
 
     new TypeWriter(txtElement, words, wait)
 }
 
+gsap.set(".hero-button", {
+    y: 300,
+    opacity: 0,
 
+});
+
+gsap.to(".hero-button", {
+    duration: 2,
+    y: 0,
+    opacity: 1,
+});
