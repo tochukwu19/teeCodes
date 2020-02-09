@@ -12,14 +12,16 @@ const elasticDiv = document.querySelector(".contactme");
 const menuStatic = document.querySelector(".menu-static")
 
 const elasticDivFn = (e) => {
-    if (window.scrollY >= 2750) {
-        elasticDiv.classList.add("elastico")
+    if (window.scrollY >= elasticDiv.offsetTop - 100) {
+        elasticDiv.classList.add("elastico");
+        console.log(elasticDiv.offsetTop)
     } else {
         elasticDiv.classList.remove("elastico");
     }
 }
 
 window.addEventListener("scroll", elasticDivFn);
+
 
 const menuStaticFn = (e) => {
     if (window.scrollY >= 1) {

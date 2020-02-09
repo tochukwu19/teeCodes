@@ -5,7 +5,7 @@ html {
 
 body {
     padding: 0px;
-    background-color: #4692bc;
+    background-color: rgb(17, 11, 38);
     margin: 0px;
     font-weight: 400;
     line-height: 1.5;
@@ -450,7 +450,7 @@ path {
 .works {
     height: auto;
     width: 100%;
-    background-color: rgb(4, 2, 21);
+    background-color: rgb(17, 11, 38);
     color: #fff;
     padding: 10px 0 10px 0;
 }
