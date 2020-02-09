@@ -173,7 +173,7 @@ path {
     fill: var(--em-color);
     stroke-dasharray: 100;
     opacity: 10;
-    animation: animate 3s cubic-bezier(0, 0.23, 1, .1);
+    animation: animate 4s cubic-bezier(0, 0.23, 1, .1);
 }
 
 .cls-1 {
@@ -450,9 +450,9 @@ path {
 .works {
     height: auto;
     width: 100%;
-    background-color: rgb(4, 2, 30);
+    background-color: rgb(4, 2, 21);
     color: #fff;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .works-head {
@@ -465,7 +465,7 @@ path {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .pro-heads {
@@ -539,8 +539,9 @@ path {
 .tag {
     background-color: #2f6b7b;
     padding: 7px;
-    margin-right: 10px;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .tag:hover {
@@ -569,10 +570,7 @@ path {
 .contactme {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to right bottom,
-            rgba(3, 2, 17, 0.50),
-            var(--hero-color)),
-        url("../images/low-angle-view-of-spiral-staircase-against-black-background-247676.jpg");
+    background-color: var(--page-color);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -580,6 +578,17 @@ path {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.contactme p{
+    color: #71fbff;
+}
+
+
+.contactme h2 {
+    color: whitesmoke;
+    font: bold;
+    font-size: 30px;
 }
 
 .contact-container {
@@ -603,6 +612,16 @@ path {
 
 .contact-container input::placeholder {
     color: var(--page-color);
+}
+
+.form-submit{
+    background-color: #71fbff !important;
+    width: fit-content !important;
+    padding: 13px !important;
+}
+
+.form-submit:hover{
+    background-color: #4692bc !important;
 }
 
 .namail {
@@ -629,6 +648,8 @@ path {
       Courier,
       monospace;
       font-weight: bold;
+      border: none;
+      margin-bottom: 10px;
 
 
 }
@@ -637,6 +658,7 @@ path {
     color: var(--page-color);
 
 }
+
 
 @media only screen and (max-width: 400px) {
     .menu {
