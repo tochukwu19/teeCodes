@@ -12,7 +12,7 @@ const elasticDiv = document.querySelector(".contactme");
 const menuStatic = document.querySelector(".menu-static")
 
 const elasticDivFn = (e) => {
-    if (window.scrollY >= 2767) {
+    if (window.scrollY >= 2750) {
         elasticDiv.classList.add("elastico")
     } else {
         elasticDiv.classList.remove("elastico");
