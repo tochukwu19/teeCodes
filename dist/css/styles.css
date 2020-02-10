@@ -617,6 +617,7 @@ path {
     padding: 20px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    width: 100%;
 }
 
 .contact-container input::placeholder {
@@ -633,20 +634,6 @@ path {
     background-color: #4692bc !important;
 }
 
-.namail {
-    display: flex;
-}
-
-.namail .form-name {
-    margin-right: 10px;
-    width: 50%;
-    height: fit-content;
-}
-
-.form-email {
-    width: 50%;
-    height: fit-content;
-}
 
 .form-msg {
     height: 100px !important;
@@ -659,6 +646,7 @@ path {
     font-weight: bold;
     border: none;
     margin-bottom: 10px;
+    width: 100%;
 
 
 }
@@ -750,7 +738,7 @@ footer .fa:hover{
 
 @media only screen and (max-width: 700px) {
     .contact-container {
-        width: 90%;
+        width: 80%;
     }
 }
 

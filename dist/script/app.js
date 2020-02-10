@@ -14,7 +14,6 @@ const menuStatic = document.querySelector(".menu-static")
 const elasticDivFn = (e) => {
     if (window.scrollY >= elasticDiv.offsetTop - 100) {
         elasticDiv.classList.add("elastico");
-        console.log(elasticDiv.offsetTop)
     } else {
         elasticDiv.classList.remove("elastico");
     }
@@ -151,14 +150,20 @@ function init() {
     new TypeWriter(txtElement, words, wait)
 }
 
-gsap.set(".hero-button", {
-    y: 300,
+// GSAP ANIMATIONS
+
+gsap.from(".about-text", {
     opacity: 0,
+    y: 500,
+    duration: 2
+})
 
-});
+var rect = document.querySelector(".about-text").getBoundingClientRect();
+var vh = window.innerHeight;
 
-gsap.to(".hero-button", {
-    duration: 2,
-    y: 0,
-    opacity: 1,
-});
+if (rect.top >= 0 && rect.bottom <= vh) {
+    // Fully visible
+    console.log(document.querySelector(".about-text").getBoundingClientRect())
+}
+
+console.log(vh)
