@@ -602,6 +602,12 @@ path {
     width: 60%;
 }
 
+#test-form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .contact-container input {
     background-color: #4692bc;
     outline-color: none;
@@ -636,7 +642,6 @@ path {
     padding: 20px;
     font-family: "raleway",
         sans-serif;
-
     font-weight: bold;
     border: none;
     margin-bottom: 10px;

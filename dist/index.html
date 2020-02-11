@@ -13,6 +13,7 @@
         rel="stylesheet">
     <meta name="format-detection" content="telephone=no">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 
@@ -233,11 +234,13 @@
             <div class="contact-container">
                 <h2>HIRE ME!</h2>
                 <p>You have a question or You want to hire me?</p>
-                    <input type="text" placeholder="Name" class="form-name">
-                    <input type="text" placeholder="Email" class="form-email">
-                    <input type="text" placeholder="Subject" class="form-sub">
-                    <textarea type="text" placeholder="Message" class="form-msg"></textarea>
+                <form id="test-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSejsEbuT8HVdPdwBxFlRgQkxIFWCw-gdGJgLhvByk38RlKyOg/formResponse" target="_self" method="POST">
+                    <input type="text" placeholder="Name" name="entry.1222617836" class="form-name">
+                    <input type="text" placeholder="Email" name="entry.1271784570"" class="form-email">
+                    <input type="text" placeholder="Subject" name="entry.1189847314" class="form-sub">
+                    <textarea type="text" placeholder="Message" name="entry.727967512" class="form-msg"></textarea>
                     <input type="submit" class="form-submit" value="send">
+                </form>
             </div>
         </section>
     </main>

@@ -158,12 +158,6 @@ gsap.from(".about-text", {
     duration: 2
 })
 
-var rect = document.querySelector(".about-text").getBoundingClientRect();
-var vh = window.innerHeight;
 
-if (rect.top >= 0 && rect.bottom <= vh) {
-    // Fully visible
-    console.log(document.querySelector(".about-text").getBoundingClientRect())
-}
 
-console.log(vh)
+
