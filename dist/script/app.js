@@ -1,3 +1,4 @@
+// Declarations
 const ham = document.querySelector(".hamburger");
 const ham3 = document.querySelector(".ham3");
 const ham2 = document.querySelector(".ham2");
@@ -9,28 +10,11 @@ const skill2 = document.querySelector(".skill2");
 const skill3 = document.querySelector(".skill3");
 const skill4 = document.querySelector(".skill4");
 const elasticDiv = document.querySelector(".contactme");
-const menuStatic = document.querySelector(".menu-static")
+const menuStatic = document.querySelector(".menu-static");
+const aboutText = document.querySelector(".about-text");
+const project1 = document.querySelector(".desc1")
 
-const elasticDivFn = (e) => {
-    if (window.scrollY >= elasticDiv.offsetTop - 100) {
-        elasticDiv.classList.add("elastico");
-    } else {
-        elasticDiv.classList.remove("elastico");
-    }
-}
-
-window.addEventListener("scroll", elasticDivFn);
-
-
-const menuStaticFn = (e) => {
-    if (window.scrollY >= 1) {
-        menuStatic.classList.add("menu-static-color")
-    } else {
-        menuStatic.classList.remove("menu-static-color");
-    }
-}
-
-window.addEventListener("scroll", menuStaticFn);
+// Skill graph JS
 
 const skiller1 = (e) => {
     if (window.scrollY >= 265) {
@@ -72,6 +56,55 @@ const skiller4 = (e) => {
 
 window.addEventListener("scroll", skiller4);
 
+
+// OnScroll animations
+
+const elasticDivFn = (e) => {
+    if (window.scrollY >= elasticDiv.offsetTop - 100) {
+        elasticDiv.classList.add("elastico");
+    } else {
+        elasticDiv.classList.remove("elastico");
+    }
+}
+
+window.addEventListener("scroll", elasticDivFn);
+
+const aboutFn = (e) => {
+    if (window.scrollY >= aboutText.offsetTop - 500) {
+        aboutText.classList.add("about-out");
+    } else {
+        aboutText.classList.remove("about-out");
+    }
+}
+
+window.addEventListener("scroll", aboutFn);
+
+
+const pro1Fn = (e) => {
+    if (window.scrollY >= project1.offsetTop - 500) {
+        project1.classList.add("pro1-out");
+    } else {
+        project1.classList.remove("pro1-out");
+    }
+}
+
+window.addEventListener("scroll", pro1Fn);
+
+
+
+// Nav bar JS
+const menuStaticFn = (e) => {
+    if (window.scrollY >= 1) {
+        menuStatic.classList.add("menu-static-color")
+    } else {
+        menuStatic.classList.remove("menu-static-color");
+    }
+}
+
+window.addEventListener("scroll", menuStaticFn);
+
+
+// Hamburger JS
 const menuOpen = (e) => {
     ham1.classList.toggle("ham-tilt-right");
     ham2.classList.toggle("ham-no-show");
@@ -81,16 +114,9 @@ const menuOpen = (e) => {
 }
 ham.addEventListener("click", menuOpen)
 
-const navOverlayCloseNav = (e) => {
-    navbar.classList.remove("nav-out");
-    navOverlay.classList.remove("nav-overlay-out");
-    ham1.classList.remove("ham-tilt-right");
-    ham2.classList.remove("ham-no-show");
-    ham3.classList.remove("ham-tilt-left");
-}
 
-navOverlay.addEventListener("click", navOverlayCloseNav)
 
+// Hero-text Typewriter Effect
 
 const TypeWriter = function (txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
@@ -101,9 +127,6 @@ const TypeWriter = function (txtElement, words, wait = 3000) {
     this.type();
     this.isDeleting = false;
 }
-
-// Init on dom load
-
 
 TypeWriter.prototype.type = function () {
 
@@ -149,15 +172,4 @@ function init() {
 
     new TypeWriter(txtElement, words, wait)
 }
-
-// GSAP ANIMATIONS
-
-gsap.from(".about-text", {
-    opacity: 0,
-    y: 500,
-    duration: 2
-})
-
-
-
 

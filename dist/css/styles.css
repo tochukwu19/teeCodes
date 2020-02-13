@@ -31,13 +31,14 @@ body::-webkit-scrollbar-thumb {
     --em-color: #71fbff;
 }
 
+
 /* Nav section */
 .nav-out {
     transform: translateX(-100%);
 }
 
 .menu {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -143,20 +144,6 @@ body::-webkit-scrollbar-thumb {
     width: 10px;
 }
 
-.nav-overlay {
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
-    position: fixed;
-    z-index: 2;
-    opacity: 0.3;
-    display: none;
-}
-
-.nav-overlay-out {
-    display: block;
-}
-
 .logo-container {
     padding: 20px;
     position: fixed;
@@ -232,7 +219,7 @@ path {
     background-image: linear-gradient(to right bottom,
             rgba(3, 2, 17, 0.50),
             var(--hero-color)),
-        url("../images/low-angle-view-of-spiral-staircase-against-black-background-247676.jpg");
+        url("https://res.cloudinary.com/teecodes/image/upload/v1581587170/teecodes%20media/low-angle-view-of-spiral-staircase-against-black-background-247676_ivz26p.jpg");
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -321,6 +308,16 @@ path {
     padding: 20px;
 }
 
+.about-text{
+        opacity: 0;
+        transform: translateY(100px);
+        transition: 0.5s;
+}
+
+.about-out{
+        opacity: 1;
+        transform: translateY(0px);
+}
 .aboutme {
     width: 40%;
     margin-bottom: 20px;
@@ -500,6 +497,16 @@ path {
     width: 40%;
 }
 
+.desc1{
+    transition: 0.5s ease-in-out;
+    transform: translateX(-300px);
+    opacity: 0;
+}
+
+.pro1-out{
+    transform: translateX(0px);
+    opacity: 1;
+}
 .project-img-container {
     width: 40%;
 }
