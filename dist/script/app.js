@@ -12,7 +12,12 @@ const skill4 = document.querySelector(".skill4");
 const elasticDiv = document.querySelector(".contactme");
 const menuStatic = document.querySelector(".menu-static");
 const aboutText = document.querySelector(".about-text");
-const project1 = document.querySelector(".desc1")
+const project1 = document.querySelector(".desc1");
+const project1Img = document.querySelector(".img1");
+const project2 = document.querySelector(".desc2");
+const project2Img = document.querySelector(".img2");
+const project3 = document.querySelector(".desc3");
+const project3Img = document.querySelector(".img3");
 
 // Skill graph JS
 
@@ -90,6 +95,60 @@ const pro1Fn = (e) => {
 
 window.addEventListener("scroll", pro1Fn);
 
+
+const pro2Fn = (e) => {
+    if (window.scrollY >= project1Img.offsetTop - 500) {
+        project1Img.classList.add("pro1-out");
+    } else {
+        project1Img.classList.remove("pro1-out");
+    }
+}
+
+window.addEventListener("scroll", pro2Fn);
+
+
+const pro3Fn = (e) => {
+    if (window.scrollY >= project2.offsetTop - 500) {
+        project2.classList.add("pro1-out");
+    } else {
+        project2.classList.remove("pro1-out");
+    }
+}
+
+window.addEventListener("scroll", pro3Fn);
+
+
+const pro4Fn = (e) => {
+    if (window.scrollY >= project2Img.offsetTop - 500) {
+        project2Img.classList.add("pro1-out");
+    } else {
+        project2Img.classList.remove("pro1-out");
+    }
+}
+
+window.addEventListener("scroll", pro4Fn);
+
+
+const pro5Fn = (e) => {
+    if (window.scrollY >= project3.offsetTop - 500) {
+        project3.classList.add("pro1-out");
+    } else {
+        project3.classList.remove("pro1-out");
+    }
+}
+
+window.addEventListener("scroll", pro5Fn);
+
+
+const pro6Fn = (e) => {
+    if (window.scrollY >= project3Img.offsetTop - 500) {
+        project3Img.classList.add("pro1-out");
+    } else {
+        project3Img.classList.remove("pro1-out");
+    }
+}
+
+window.addEventListener("scroll", pro6Fn);
 
 
 // Nav bar JS

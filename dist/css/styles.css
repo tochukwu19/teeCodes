@@ -240,6 +240,7 @@ path {
     text-align: center;
 }
 
+
 .hero-scroll-container {
     right: 0;
 }
@@ -308,16 +309,17 @@ path {
     padding: 20px;
 }
 
-.about-text{
-        opacity: 0;
-        transform: translateY(100px);
-        transition: 0.5s;
+.about-text {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 0.5s;
 }
 
-.about-out{
-        opacity: 1;
-        transform: translateY(0px);
+.about-out {
+    opacity: 1;
+    transform: translateY(0px);
 }
+
 .aboutme {
     width: 40%;
     margin-bottom: 20px;
@@ -497,16 +499,48 @@ path {
     width: 40%;
 }
 
-.desc1{
+.desc1 {
     transition: 0.5s ease-in-out;
     transform: translateX(-300px);
     opacity: 0;
 }
 
-.pro1-out{
-    transform: translateX(0px);
-    opacity: 1;
+
+.desc2 {
+    transition: 0.5s ease-in-out;
+    transform: translateX(300px);
+    opacity: 0;
 }
+
+.desc3 {
+    transition: 0.5s ease-in-out;
+    transform: translateX(-300px);
+    opacity: 0;
+}
+
+.pro1-out {
+    transform: translateX(0px) !important;
+    opacity: 1 !important;
+}
+
+.img1 {
+    transition: 0.5s ease-in-out !important;
+    transform: translateX(300px);
+    opacity: 0;
+}
+
+.img2 {
+    transition: 0.5s ease-in-out !important;
+    transform: translateX(-300px);
+    opacity: 0;
+}
+
+.img3 {
+    transition: 0.5s ease-in-out !important;
+    transform: translateX(300px);
+    opacity: 0;
+}
+
 .project-img-container {
     width: 40%;
 }
@@ -609,10 +643,10 @@ path {
     width: 60%;
 }
 
-#test-form{
+#test-form {
     display: flex;
     flex-direction: column;
-    
+
 }
 
 .contact-container input {
