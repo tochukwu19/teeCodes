@@ -498,13 +498,12 @@ path {
 .project-desc {
     width: 40%;
 }
-
+/* 
 .desc1 {
     transition: 0.5s ease-in-out;
     transform: translateX(-300px);
     opacity: 0;
 }
-
 
 .desc2 {
     transition: 0.5s ease-in-out;
@@ -539,7 +538,7 @@ path {
     transition: 0.5s ease-in-out !important;
     transform: translateX(300px);
     opacity: 0;
-}
+} */
 
 .project-img-container {
     width: 40%;
