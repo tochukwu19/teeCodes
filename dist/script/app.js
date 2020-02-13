@@ -74,83 +74,6 @@ const elasticDivFn = (e) => {
 
 window.addEventListener("scroll", elasticDivFn);
 
-const aboutFn = (e) => {
-    if (window.scrollY >= aboutText.offsetTop - 500) {
-        aboutText.classList.add("about-out");
-    } else {
-        aboutText.classList.remove("about-out");
-    }
-}
-
-window.addEventListener("scroll", aboutFn);
-
-
-const pro1Fn = (e) => {
-    if (window.scrollY >= project1.offsetTop - 500) {
-        project1.classList.add("pro1-out");
-    } else {
-        project1.classList.remove("pro1-out");
-    }
-}
-
-window.addEventListener("scroll", pro1Fn);
-
-
-const pro2Fn = (e) => {
-    if (window.scrollY >= project1Img.offsetTop - 500) {
-        project1Img.classList.add("pro1-out");
-    } else {
-        project1Img.classList.remove("pro1-out");
-    }
-}
-
-window.addEventListener("scroll", pro2Fn);
-
-
-const pro3Fn = (e) => {
-    if (window.scrollY >= project2.offsetTop - 500) {
-        project2.classList.add("pro1-out");
-    } else {
-        project2.classList.remove("pro1-out");
-    }
-}
-
-window.addEventListener("scroll", pro3Fn);
-
-
-const pro4Fn = (e) => {
-    if (window.scrollY >= project2Img.offsetTop - 500) {
-        project2Img.classList.add("pro1-out");
-    } else {
-        project2Img.classList.remove("pro1-out");
-    }
-}
-
-window.addEventListener("scroll", pro4Fn);
-
-
-const pro5Fn = (e) => {
-    if (window.scrollY >= project3.offsetTop - 500) {
-        project3.classList.add("pro1-out");
-    } else {
-        project3.classList.remove("pro1-out");
-    }
-}
-
-window.addEventListener("scroll", pro5Fn);
-
-
-const pro6Fn = (e) => {
-    if (window.scrollY >= project3Img.offsetTop - 500) {
-        project3Img.classList.add("pro1-out");
-    } else {
-        project3Img.classList.remove("pro1-out");
-    }
-}
-
-window.addEventListener("scroll", pro6Fn);
-
-
 // Nav bar JS
 const menuStaticFn = (e) => {
     if (window.scrollY >= 1) {
@@ -232,3 +155,30 @@ function init() {
     new TypeWriter(txtElement, words, wait)
 }
 
+// AOS
+AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});

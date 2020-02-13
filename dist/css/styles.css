@@ -309,17 +309,6 @@ path {
     padding: 20px;
 }
 
-.about-text {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: 0.5s;
-}
-
-.about-out {
-    opacity: 1;
-    transform: translateY(0px);
-}
-
 .aboutme {
     width: 40%;
     margin-bottom: 20px;
@@ -498,47 +487,6 @@ path {
 .project-desc {
     width: 40%;
 }
-/* 
-.desc1 {
-    transition: 0.5s ease-in-out;
-    transform: translateX(-300px);
-    opacity: 0;
-}
-
-.desc2 {
-    transition: 0.5s ease-in-out;
-    transform: translateX(300px);
-    opacity: 0;
-}
-
-.desc3 {
-    transition: 0.5s ease-in-out;
-    transform: translateX(-300px);
-    opacity: 0;
-}
-
-.pro1-out {
-    transform: translateX(0px) !important;
-    opacity: 1 !important;
-}
-
-.img1 {
-    transition: 0.5s ease-in-out !important;
-    transform: translateX(300px);
-    opacity: 0;
-}
-
-.img2 {
-    transition: 0.5s ease-in-out !important;
-    transform: translateX(-300px);
-    opacity: 0;
-}
-
-.img3 {
-    transition: 0.5s ease-in-out !important;
-    transform: translateX(300px);
-    opacity: 0;
-} */
 
 .project-img-container {
     width: 40%;
