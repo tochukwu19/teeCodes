@@ -478,6 +478,11 @@ path {
 
 }
 
+.pro-heads:active {
+    background-color: #4692bc;
+}
+
+
 .pro-heads:hover {
     background-color: #4692bc;
 }
@@ -502,6 +507,7 @@ path {
     width: 100%;
     filter: grayscale(1);
     transition: filter 0.2s;
+    border-radius: 3%;
 }
 
 .project-img:hover {
