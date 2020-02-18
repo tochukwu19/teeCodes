@@ -64,7 +64,7 @@ window.addEventListener("scroll", skiller4);
 
 // OnScroll animations
 
-const elasticDivFn = (e) => {
+const elasticDivFn = e => {
     if (window.scrollY >= elasticDiv.offsetTop - 100) {
         elasticDiv.classList.add("elastico");
     } else {
@@ -75,7 +75,7 @@ const elasticDivFn = (e) => {
 window.addEventListener("scroll", elasticDivFn);
 
 // Nav bar JS
-const menuStaticFn = (e) => {
+const menuStaticFn = e => {
     if (window.scrollY >= 1) {
         menuStatic.classList.add("menu-static-color")
     } else {
@@ -87,7 +87,7 @@ window.addEventListener("scroll", menuStaticFn);
 
 
 // Hamburger JS
-const menuOpen = (e) => {
+const menuOpen = e => {
     ham1.classList.toggle("ham-tilt-right");
     ham2.classList.toggle("ham-no-show");
     ham3.classList.toggle("ham-tilt-left");

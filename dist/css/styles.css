@@ -162,7 +162,7 @@ path {
     fill: var(--em-color);
     stroke-dasharray: 100;
     opacity: 10;
-    animation: animate 4s cubic-bezier(0, 0.23, 1, .1);
+    animation: animate 2s cubic-bezier(0, 0.23, 1, .1);
 }
 
 .cls-1 {
@@ -276,6 +276,10 @@ path {
     font-size: 17px;
 }
 
+.hero-button a{
+    color: #fff;
+    text-decoration: none;
+}
 
 .hero-button:hover {
     background-size: 100% 100%;
