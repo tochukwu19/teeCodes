@@ -276,7 +276,7 @@ path {
     font-size: 17px;
 }
 
-.hero-button a{
+.hero-button a {
     color: #fff;
     text-decoration: none;
 }
@@ -536,6 +536,12 @@ path {
     text-align: center;
     display: flex;
     align-items: center;
+}
+
+.tag-ai {
+    width: 100px;
+    display: flex;
+    justify-content: center;
 }
 
 .tag:hover {
