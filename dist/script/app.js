@@ -1,23 +1,23 @@
 // Declarations
-const ham = document.querySelector(".hamburger");
-const ham3 = document.querySelector(".ham3");
-const ham2 = document.querySelector(".ham2");
-const ham1 = document.querySelector(".ham1");
-const navbar = document.querySelector(".menu");
-const skill1 = document.querySelector(".skill1");
-const skill2 = document.querySelector(".skill2");
-const skill3 = document.querySelector(".skill3");
-const skill4 = document.querySelector(".skill4");
-const elasticDiv = document.querySelector(".contactme");
-const menuStatic = document.querySelector(".menu-static");
-const aboutText = document.querySelector(".about-text");
-const project1 = document.querySelector(".desc1");
-const project1Img = document.querySelector(".img1");
-const project2 = document.querySelector(".desc2");
-const project2Img = document.querySelector(".img2");
-const project3 = document.querySelector(".desc3");
-const project3Img = document.querySelector(".img3");
-const Links = document.querySelectorAll(".menu-link");
+const ham = document.querySelector(".hamburger"),
+    ham3 = document.querySelector(".ham3"),
+    ham2 = document.querySelector(".ham2"),
+    ham1 = document.querySelector(".ham1"),
+    navbar = document.querySelector(".menu"),
+    skill1 = document.querySelector(".skill1"),
+    skill2 = document.querySelector(".skill2"),
+    skill3 = document.querySelector(".skill3"),
+    skill4 = document.querySelector(".skill4"),
+    elasticDiv = document.querySelector(".contactme"),
+    menuStatic = document.querySelector(".menu-static"),
+    aboutText = document.querySelector(".about-text"),
+    project1 = document.querySelector(".desc1"),
+    project1Img = document.querySelector(".img1"),
+    project2 = document.querySelector(".desc2"),
+    project2Img = document.querySelector(".img2"),
+    project3 = document.querySelector(".desc3"),
+    project3Img = document.querySelector(".img3"),
+    Links = document.querySelectorAll(".menu-link");
 
 // Links
 [...Links].forEach((Link) => {
