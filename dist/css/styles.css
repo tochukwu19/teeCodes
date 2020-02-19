@@ -575,7 +575,7 @@ path {
 /* Resume */
 .resume{
     width: 100%;
-    height: 200px;
+    height: 250px;
     background: linear-gradient(to bottom,
         rgb(7, 5, 29),
         rgb(9, 6, 51));

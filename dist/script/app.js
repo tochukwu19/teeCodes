@@ -4,7 +4,6 @@ const ham3 = document.querySelector(".ham3");
 const ham2 = document.querySelector(".ham2");
 const ham1 = document.querySelector(".ham1");
 const navbar = document.querySelector(".menu");
-const navOverlay = document.querySelector(".nav-overlay");
 const skill1 = document.querySelector(".skill1");
 const skill2 = document.querySelector(".skill2");
 const skill3 = document.querySelector(".skill3");
@@ -18,6 +17,17 @@ const project2 = document.querySelector(".desc2");
 const project2Img = document.querySelector(".img2");
 const project3 = document.querySelector(".desc3");
 const project3Img = document.querySelector(".img3");
+const Links = document.querySelectorAll(".menu-link");
+
+// Links
+[...Links].forEach((Link) => {
+    Link.addEventListener('click', () => {
+        navbar.classList.remove("nav-out");
+        ham1.classList.remove("ham-tilt-right");
+        ham2.classList.remove("ham-no-show");
+        ham3.classList.remove("ham-tilt-left");
+    });
+});
 
 // Skill graph JS
 
@@ -92,7 +102,6 @@ const menuOpen = e => {
     ham2.classList.toggle("ham-no-show");
     ham3.classList.toggle("ham-tilt-left");
     navbar.classList.toggle("nav-out");
-    navOverlay.classList.toggle("nav-overlay-out")
 }
 ham.addEventListener("click", menuOpen)
 
