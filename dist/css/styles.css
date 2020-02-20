@@ -554,6 +554,15 @@ path {
     background-color: #4692bc;
 }
 
+.web,
+.graphics{
+    display: flex;
+}
+
+.web-only,
+.graphics-only{
+    display: none !important;
+}
 
 
 @keyframes bounce {

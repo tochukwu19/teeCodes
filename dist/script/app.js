@@ -1,5 +1,6 @@
 // Declarations
-const ham = document.querySelector(".hamburger"),
+const
+    ham = document.querySelector(".hamburger"),
     ham3 = document.querySelector(".ham3"),
     ham2 = document.querySelector(".ham2"),
     ham1 = document.querySelector(".ham1"),
@@ -17,7 +18,51 @@ const ham = document.querySelector(".hamburger"),
     project2Img = document.querySelector(".img2"),
     project3 = document.querySelector(".desc3"),
     project3Img = document.querySelector(".img3"),
-    Links = document.querySelectorAll(".menu-link");
+    Links = document.querySelectorAll(".menu-link"),
+    allBtn = document.querySelector(".pro-heads1"),
+    webBtn = document.querySelector(".pro-heads2"),
+    graphBtn = document.querySelector(".pro-heads3"),
+    webs = document.querySelectorAll(".web");
+    graphics = document.querySelectorAll(".graphics")
+
+    // Projects sieving
+function webFn(e) {
+    [...webs].forEach((web) => {
+        web.classList.remove("web-only");
+    });
+
+    [...graphics].forEach((graphic) => {
+        graphic.classList.add("graphics-only");
+    });
+}
+
+webBtn.addEventListener("click", webFn);
+
+function graphFn(e) {
+
+    [...webs].forEach((web) => {
+        web.classList.add("web-only");
+    });
+
+    [...graphics].forEach((graphic) => {
+        graphic.classList.remove("graphics-only");
+    });
+}
+
+graphBtn.addEventListener("click", graphFn);
+
+function allFn(e) {
+
+    [...webs].forEach((web) => {
+        web.classList.remove("web-only");
+    });
+
+    [...graphics].forEach((graphic) => {
+        graphic.classList.remove("graphics-only");
+    });
+}
+
+allBtn.addEventListener("click", allFn);
 
 // Links
 [...Links].forEach((Link) => {
@@ -191,3 +236,4 @@ AOS.init({
     anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
