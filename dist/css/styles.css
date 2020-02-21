@@ -299,10 +299,12 @@ path {
     position: absolute;
     bottom: 50px;
     right: 8px;
-
 }
 
-
+.Enquiries a{
+    color: #fff;
+    text-decoration: none;
+}
 
 /* ABOUT */
 .about {
